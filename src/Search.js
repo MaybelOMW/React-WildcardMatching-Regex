@@ -45,7 +45,7 @@ const Search = (props) => {
     console.log(e.target.value);
     if (e.target.value !== "") {
       let filteredData = sampleData.filter((item) =>
-        wildTest(e.target.value, item.material_name)
+        wildTest(e.target.value, item.name)
       );
       setResult(filteredData);
     } else setResult(sampleData);
