@@ -1,105 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import Search from "./Search";
-
-const sampleData = [
-  {
-    name: "aab"
-  },
-  {
-    name: "ab"
-  },
-  {
-    name: "acdeb"
-  },
-  {
-    name: "caaby"
-  },
-  {
-    name: "c!t"
-  },
-  {
-    name: "c@i"
-  },
-  {
-    name: "c#y"
-  },
-  {
-    name: "c$y"
-  },
-  {
-    name: "c%i"
-  },
-  {
-    name: "c^y"
-  },
-  {
-    name: "c&y"
-  },
-  {
-    name: "c(i"
-  },
-  {
-    name: "c)y"
-  },
-  {
-    name: "c-y"
-  },
-  {
-    name: "c_i"
-  },
-  {
-    name: "c+y"
-  },
-  {
-    name: "c=y"
-  },
-  {
-    name: "c{y"
-  },
-  {
-    name: "c}y"
-  },
-  {
-    name: "c[i"
-  },
-  {
-    name: "c]y"
-  },
-  {
-    name: "c|y"
-  },
-  {
-    name: "c\\y"
-  },
-  {
-    name: "c:y"
-  },
-  {
-    name: "c;y"
-  },
-  {
-    name: "c'y"
-  },
-  {
-    name: "c<y"
-  },
-  {
-    name: "c>y"
-  },
-  {
-    name: "c?y"
-  },
-  {
-    name: "c/y"
-  },
-  {
-    name: "c,y"
-  },
-  {
-    name: "c.y"
-  }
-];
+import SAMPLE_DATA from "./Constants";
 
 const App = () => {
   return (
@@ -110,7 +12,7 @@ const App = () => {
       justify="center"
       alignItems="center"
     >
-      <Search sampleData={sampleData} />
+      <Search sampleData={SAMPLE_DATA} />
     </Grid>
   );
 };
